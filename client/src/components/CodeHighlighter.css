@@ -1,0 +1,153 @@
+.code-highlighter {
+  background: #2d3748;
+  border-radius: 8px;
+  overflow: hidden;
+  border: 1px solid #4a5568;
+  font-family: 'Monaco', 'Menlo', 'Ubuntu Mono', 'Consolas', monospace;
+}
+
+.code-header {
+  background: #1a202c;
+  padding: 8px 16px;
+  border-bottom: 1px solid #4a5568;
+}
+
+.language-label {
+  color: #a0aec0;
+  font-size: 0.75rem;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+}
+
+.code-content {
+  display: flex;
+  max-height: 400px;
+  overflow: auto;
+}
+
+.line-numbers {
+  background: #2d3748;
+  padding: 16px 8px;
+  border-right: 1px solid #4a5568;
+  user-select: none;
+  min-width: 40px;
+}
+
+.line-number {
+  color: #718096;
+  font-size: 14px;
+  line-height: 1.5;
+  text-align: right;
+  padding-right: 8px;
+}
+
+.code-lines {
+  flex: 1;
+  overflow-x: auto;
+}
+
+.code-lines pre {
+  margin: 0;
+  padding: 16px;
+  color: #e2e8f0;
+  font-size: 14px;
+  line-height: 1.5;
+  background: transparent;
+}
+
+.code-lines code {
+  background: transparent;
+  color: inherit;
+  font-family: inherit;
+  font-size: inherit;
+}
+
+/* Syntax highlighting for common Python keywords */
+.code-lines pre code {
+  white-space: pre;
+}
+
+/* Basic syntax highlighting using CSS */
+.code-lines pre {
+  /* Python keywords */
+  background: linear-gradient(transparent, transparent);
+}
+
+/* Light theme variant */
+.code-highlighter.light {
+  background: #f7fafc;
+  border-color: #e2e8f0;
+}
+
+.code-highlighter.light .code-header {
+  background: #edf2f7;
+  border-bottom-color: #e2e8f0;
+}
+
+.code-highlighter.light .language-label {
+  color: #4a5568;
+}
+
+.code-highlighter.light .line-numbers {
+  background: #f7fafc;
+  border-right-color: #e2e8f0;
+}
+
+.code-highlighter.light .line-number {
+  color: #718096;
+}
+
+.code-highlighter.light .code-lines pre {
+  color: #2d3748;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .code-content {
+    max-height: 300px;
+  }
+  
+  .line-numbers {
+    padding: 12px 6px;
+    min-width: 35px;
+  }
+  
+  .line-number {
+    font-size: 12px;
+    padding-right: 6px;
+  }
+  
+  .code-lines pre {
+    padding: 12px;
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 480px) {
+  .code-header {
+    padding: 6px 12px;
+  }
+  
+  .language-label {
+    font-size: 0.7rem;
+  }
+  
+  .code-content {
+    max-height: 250px;
+  }
+  
+  .line-numbers {
+    padding: 10px 4px;
+    min-width: 30px;
+  }
+  
+  .line-number {
+    font-size: 11px;
+    padding-right: 4px;
+  }
+  
+  .code-lines pre {
+    padding: 10px;
+    font-size: 12px;
+  }
+}
