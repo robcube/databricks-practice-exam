@@ -96,6 +96,10 @@ npm run client:build   # Build frontend
 
 The project uses a spec-driven development approach with detailed requirements, design documents, and implementation tasks located in `.kiro/specs/databricks-practice-exam/`.
 
+### Documentation
+- **[Development Process](DEVELOPMENT_PROCESS.md)** - How this project was built using AI assistance with Kiro CLI
+- **[Future Roadmap](ROADMAP.md)** - Planned enhancements including containerization, cloud deployment, and enterprise features
+
 ### Core Data Models
 
 - **User**: Authentication and profile management
